@@ -5,6 +5,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { BookOpen, Brain } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import MainButton from "../main-button";
 
 export function Navbar() {
   return (
@@ -32,9 +33,13 @@ export function Navbar() {
           </div>
           <div className="flex items-center gap-4">
             <ModeToggle />
-            <Button size="sm" className="rounded-full hover:bg-secondary">
-              Try for Free
-            </Button>
+            <MainButton 
+              className="text-white font-semibold bg-primary"
+              bgClick="#3D08BF"
+              bgHover="#3D08BF"
+            >
+                Dashboard
+            </MainButton>
           </div>
         </div>
       </div>

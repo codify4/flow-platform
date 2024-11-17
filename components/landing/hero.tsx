@@ -1,8 +1,8 @@
-import { ArrowRight } from "lucide-react"
-import { Button } from "../ui/button"
 import DotPattern from "../ui/dot-pattern"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import MainButton from "../main-button"
+import { ChevronRight } from "lucide-react"
 
 const Hero = () => {
   return (
@@ -18,9 +18,14 @@ const Hero = () => {
             </p>
 
             <div className="flex gap-4 justify-center">
-              <Button size="lg" className="z-10 bg-secondary hover:bg-secondary/90 rounded-full">
-                Get Started <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <MainButton 
+                className="px-10 py-3 text-white font-semibold bg-primary"
+                bgClick="#3D08BF"
+                bgHover="#3D08BF"
+              >
+                Get Started
+                <ChevronRight className="w-5 h-5 font-bold ml-1" />
+              </MainButton>
             </div>
           </div>
           <Image 
