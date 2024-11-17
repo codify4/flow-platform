@@ -17,7 +17,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)'],
+        sans: ['var(--font-lexend)'],
       },
       colors: {
         border: "hsl(var(--border))",
