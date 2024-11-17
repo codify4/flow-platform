@@ -16,7 +16,8 @@ export function Navbar() {
               src="/flow-logo.png" 
               alt="Flow Logo" 
               width={50} 
-              height={50} />
+              height={50} 
+            />
             <span className="text-primary font-bold text-2xl">Flow</span>
           </Link>
           <div className="hidden md:flex gap-6">

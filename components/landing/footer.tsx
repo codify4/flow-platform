@@ -1,4 +1,4 @@
-import { FlaskConical } from "lucide-react"
+import Image from "next/image"
 
 const Footer = () => {
     return (
@@ -7,8 +7,13 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-8">
                     <div>
                         <div className="flex items-center gap-2 mb-4">
-                            <FlaskConical className="h-6 w-6 text-primary" />
-                            <span className="font-bold text-xl">Flow</span>
+                            <Image 
+                                src="/flow-logo.png" 
+                                alt="Flow Logo" 
+                                width={50} 
+                                height={50} 
+                            />
+                            <span className="font-bold text-primary text-2xl">Flow</span>
                         </div>
                         <p className="text-muted-foreground">
                             Empowering students with AI-powered learning tools.
@@ -39,7 +44,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
-                    <p>&copy; 2024 Flow Education. All rights reserved.</p>
+                    <p>&copy; 2024 Flow. All rights reserved.</p>
                 </div>
             </div>
         </footer>
