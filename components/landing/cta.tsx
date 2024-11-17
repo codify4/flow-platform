@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 const Cta = () => {
     return (
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Learning?</h2>
+            <div className="text-3xl font-bold mb-6">Ready to Transform Your Learning?</div>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Join thousands of students who are already using Flow to enhance their study experience.
             </p>

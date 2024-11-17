@@ -1,7 +1,7 @@
 const HowItWorks = () => {
     return (
         <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div className="text-3xl font-bold text-center mb-12">How It Works</div>
             <div className="max-w-3xl mx-auto">
                 <div className="space-y-8">
                     {[
@@ -26,7 +26,7 @@ const HowItWorks = () => {
                                 {item.step}
                             </div>
                             <div>
-                                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                                <div className="text-xl font-semibold mb-2">{item.title}</div>
                                 <p className="text-muted-foreground">{item.description}</p>
                             </div>
                         </div>
