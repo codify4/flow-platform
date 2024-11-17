@@ -1,24 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Lexend, Poppins, Sour_Gummy } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 
 const poppins = Poppins({ 
   weight: ['500'],
   subsets: ['latin'],
   variable: '--font-poppins',
-});
-
-const sourGummy = Sour_Gummy({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-sour-gummy',
-});
-
-const lexend = Lexend({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-lexend',
 });
 
 export const metadata: Metadata = {
@@ -34,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={`${sourGummy.variable} font-sans`} suppressHydrationWarning>
+      <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
