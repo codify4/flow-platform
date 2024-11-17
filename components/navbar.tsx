@@ -2,8 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
-import { BookOpen, Brain, FlaskConical } from "lucide-react";
+import { BookOpen, Brain } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Navbar() {
   return (
@@ -11,8 +12,12 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center justify-between w-full gap-6">
           <Link href="/" className="flex items-center space-x-2">
-            <FlaskConical className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl">Flow</span>
+            <Image 
+              src="/flow-logo.png" 
+              alt="Flow Logo" 
+              width={50} 
+              height={50} />
+            <span className="text-primary font-bold text-2xl">Flow</span>
           </Link>
           <div className="hidden md:flex gap-6">
             <Link href="#features" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
