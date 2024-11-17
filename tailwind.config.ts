@@ -17,7 +17,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-lexend)'],
+        sans: ['var(--font-sour-gummy)'],
       },
       colors: {
         border: "hsl(var(--border))",
