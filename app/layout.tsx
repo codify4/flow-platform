@@ -4,7 +4,7 @@ import { Poppins } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 
 const poppins = Poppins({ 
-  weight: ['600'],
+  weight: ['500'],
   subsets: ['latin'],
   variable: '--font-poppins',
 });
