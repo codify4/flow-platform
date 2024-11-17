@@ -9,11 +9,11 @@ const Hero = () => {
     <div className="container mx-auto text-center">
       <div className="flex">
         <div className="flex flex-row items-center justify-center">
-          <div className="flex flex-col items-start justify-center">
-            <div className="z-10 text-5xl md:text-6xl font-bold mb-6 text-primary text-start">
+          <div className="flex flex-col items-center lg:items-start justify-center">
+            <div className="z-10 text-5xl md:text-6xl font-bold mb-6 text-primary lg:text-start">
               Streamline Your Learning with AI
             </div>
-            <p className="z-10 text-xl text-muted-foreground text-start max-w-2xl mb-8">
+            <p className="z-10 text-xl text-muted-foreground lg:text-start max-w-2xl mb-8">
               Transform your study experience with AI-powered notes, interactive PDF chats, and smart flashcards.
             </p>
 
