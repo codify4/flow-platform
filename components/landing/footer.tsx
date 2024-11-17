@@ -1,53 +1,33 @@
-import Image from "next/image"
+import { Github, InstagramIcon, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
+
+export const socials = [
+  { name: "Instagram", icon: <InstagramIcon />, link: "https://www.instagram.com/k_ijon4/", width: 70, height: 70 },
+  { name: "LinkedIn", icon: <Linkedin />, link: "https://www.linkedin.com/in/ijon-kushta-320b6831b/", width: 50, height: 50 },
+  { name: "X", icon: <Twitter />, link: "https://twitter.com/Ijon_k4", width: 50, height: 50 },
+  { name: "Gihub", icon: <Github />, link: "https://github.com/codify4", width: 50, height: 50 },
+];
 
 const Footer = () => {
-    return (
-        <footer className="border-t py-12">
-            <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-4 gap-8">
-                    <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <Image 
-                                src="/flow-logo.png" 
-                                alt="Flow Logo" 
-                                width={50} 
-                                height={50} 
-                            />
-                            <span className="font-bold text-primary text-2xl">Flow</span>
-                        </div>
-                        <p className="text-muted-foreground">
-                            Empowering students with AI-powered learning tools.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 className="font-semibold mb-4">Features</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li>Beautiful Notes</li>
-                            <li>Chat with PDFs</li>
-                            <li>Smart Flashcards</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-semibold mb-4">Company</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-semibold mb-4">Legal</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li>Privacy Policy</li>
-                            <li>Terms of Service</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
-                    <p>&copy; 2024 Flow. All rights reserved.</p>
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="flex flex-col justify-center items-center text-black w-full border-t">
+            <div className='flex flex-col justify-center items-center my-5'>
+                <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+                <div className="flex space-x-4">
+                    {socials.map((social) => (
+                    <Link href={social.link} target="_blank" key={social.name} className="bg-white text-primary p-2 rounded-full">
+                        {social.icon}
+                    </Link>
+                    ))}
                 </div>
             </div>
-        </footer>
-    )
-}
-export default Footer
+            <div className="mt-2 mb-5 border-t border-white/10 text-center">
+                <p className="text-md">&copy; {currentYear} Flow. All rights reserved.</p>
+            </div>
+    </footer>
+  );
+};
+
+export default Footer;
