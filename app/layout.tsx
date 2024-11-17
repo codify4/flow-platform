@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Lexend, Mulish, Poppins, Sour_Gummy } from 'next/font/google';
+import { Lexend, Poppins, Sour_Gummy } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 
 const poppins = Poppins({ 
