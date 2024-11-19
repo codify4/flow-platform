@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <section className="pt-32 pb-24 px-4">
+      <section className="pt-32 pb-24 my-24 px-4">
         <Hero />
       </section>
-      <section id="features" className="py-24 bg-muted/50">
+      <section id="features" className="py-24 bg-muted/50 flex items-center justify-center">
         <Features />
       </section>
       <section id="how-it-works" className="py-24">
