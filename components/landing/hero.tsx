@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="flex flex-row items-center justify-center gap-36">
           <div className="flex flex-col items-center lg:items-start justify-center">
             <BlurFade delay={0.3}>
-              <div className="z-10 text-5xl md:text-6xl font-bold mb-6 text-primary lg:text-start">
+              <div className="z-10 text-5xl md:text-6xl font-bold lg:mb-6 text-primary lg:text-start">
                 Study Smarter
               </div>
               <div className="z-10 text-5xl md:text-6xl font-bold mb-6 text-primary lg:text-start">
