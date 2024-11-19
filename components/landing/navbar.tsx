@@ -34,7 +34,7 @@ export function Navbar() {
             </Link>
           </div>
           <div className="flex items-center gap-4">
-            <ModeToggle />
+            {/* <ModeToggle /> */}
             <MainButton 
               className="text-white font-semibold bg-primary"
               bgClick="#3D08BF"
