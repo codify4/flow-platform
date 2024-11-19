@@ -38,7 +38,7 @@ export function Navbar() {
             <MainButton 
               className="text-white font-semibold bg-primary"
               bgClick="#3D08BF"
-              bgHover="#3D08BF"
+              bgHover="#018650"
             >
                 Dashboard
             </MainButton>
