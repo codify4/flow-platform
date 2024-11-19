@@ -1,15 +1,25 @@
-import { Button } from "../ui/button"
+import MainButton from "../main-button"
 
 const Cta = () => {
     return (
-        <div className="container mx-auto px-4 text-center">
-            <div className="text-3xl font-bold mb-6">Ready to Transform Your Learning?</div>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join thousands of students who are already using Flow to enhance their study experience.
-            </p>
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-                Start Your Free Trial
-            </Button>
+        <div className="flex flex-row items-center justify-center gap-72 mx-auto px-4 text-center">
+            <div className="flex flex-col items-start text-6xl font-bold mb-6">
+                <div>
+                    <span>Learn</span> 
+                    <span className="text-secondary ml-4">Faster</span>
+                </div>
+                <div>
+                    <span>with</span> 
+                    <span className="text-primary ml-4">Flow</span>
+                </div>
+            </div>
+            <MainButton 
+                className="px-16 py-6 text-lg text-white font-semiboldbg-primary hover:bg-secondary rounded-full"
+                bgClick="#3D08BF"
+                bgHover="#018650"
+            >
+                Start Learning
+            </MainButton>
         </div>
     )
 }

@@ -24,7 +24,10 @@ const MainButton = ({ className, children, onClick, variant = "default", bgClick
                 className={cn("z-10 rounded-full shadow-lg", className)}
                 whileHover={{ scale: 1.05, backgroundColor: bgHover }}
                 whileTap={{ scale: 0.95, backgroundColor: bgClick }}
-                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+                transition={{ 
+                    scale: { type: 'spring', stiffness: 400, damping: 10 },
+                    backgroundColor: { duration: 0 }
+                }}
             >
                 {children}
             </motion.button>

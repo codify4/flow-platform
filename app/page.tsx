@@ -22,7 +22,7 @@ export default function Home() {
       <section className="py-24 bg-muted/50">
         <Testimonials />
       </section>
-      <section className="py-24">
+      <section className="pb-24">
         <Cta />
       </section>
       <Footer />
