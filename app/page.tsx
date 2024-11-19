@@ -13,13 +13,13 @@ export default function Home() {
       <section className="pt-32 pb-24 my-24 px-4">
         <Hero />
       </section>
-      <section id="features" className="py-24 mt-64 lg:mt-36 bg-muted/50 flex items-center justify-center">
+      <section id="features" className="py-24 mt-64 lg:mt-36 flex items-center justify-center">
         <Features />
       </section>
       <section id="how-it-works" className="py-24">
         <HowItWorks />
       </section>
-      <section className="py-24 bg-muted/50">
+      <section className="py-24">
         <Testimonials />
       </section>
       <section className="pb-24">
