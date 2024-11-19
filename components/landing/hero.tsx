@@ -11,11 +11,11 @@ const Hero = () => {
       <div className="flex">
         <div className="flex flex-row items-center justify-center gap-36">
           <div className="flex flex-col items-center lg:items-start justify-center">
-            <BlurFade delay={0.3}>
-              <div className="z-10 text-5xl md:text-6xl font-bold lg:mb-6 text-primary lg:text-start">
+            <BlurFade delay={0.3} className="z-10">
+              <div className="z-10 text-5xl md:text-7xl font-bold lg:mb-6 text-primary lg:text-start">
                 Study Smarter
               </div>
-              <div className="z-10 text-5xl md:text-6xl font-bold mb-6 text-primary lg:text-start">
+              <div className="z-10 text-5xl md:text-7xl font-bold mb-6 text-primary lg:text-start">
                 Not Harder
               </div>
             </BlurFade>
@@ -27,7 +27,7 @@ const Hero = () => {
             <BlurFade delay={0.5} className="z-10">
               <div className="flex gap-4 justify-center">
                 <MainButton 
-                  className="px-10 py-3 text-white font-semiboldbg-primary"
+                  className="px-12 py-4 text-white font-semiboldbg-primary"
                   bgClick="#3D08BF"
                   bgHover="#3D08BF"
                 >
@@ -56,7 +56,7 @@ const Hero = () => {
         cr={1}
         className={cn(
           "[mask-image:radial-gradient(1400px_circle_at_center,white,transparent)]",
-          "w-full h-3/4"
+          "w-full h-full"
         )}
       />
     </div>
