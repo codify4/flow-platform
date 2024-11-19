@@ -5,7 +5,7 @@ const Cta = () => {
         <div className="flex flex-row items-center justify-center gap-72 mx-auto px-4 text-center">
             <div className="flex flex-col items-start text-6xl font-bold mb-6">
                 <div>
-                    <span>Learn</span> 
+                    <span>Study</span> 
                     <span className="text-secondary ml-4">Faster</span>
                 </div>
                 <div>
