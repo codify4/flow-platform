@@ -2,8 +2,8 @@ import MainButton from "../main-button"
 
 const Cta = () => {
     return (
-        <div className="flex flex-row items-center justify-center gap-72 mx-auto px-4 text-center">
-            <div className="flex flex-col items-start text-6xl font-bold mb-6">
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-32 lg:gap-72 mx-auto px-4 text-center">
+            <div className="flex flex-col items-center md:items-start text-6xl font-bold mb-6">
                 <div>
                     <span>Study</span> 
                     <span className="text-secondary ml-4">Faster</span>

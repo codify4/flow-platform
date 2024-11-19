@@ -46,7 +46,7 @@ function Features() {
     return (
         <BlurFade delay={0.3} inView className="w-11/12 md:w-full flex flex-col justify-center items-center">
             <div className="text-4xl font-bold text-center mb-12">Features</div>
-            <BentoGrid className="grid grid-cols-1 lg:grid-cols-3 grid-rows-4 sm:grid-rows-1 gap-4 my-10 w-full md:w-3/4 lg:w-11/12 xl:w-10/12 2xl:w-9/12">
+            <BentoGrid className="grid grid-cols-1 lg:grid-cols-3 grid-rows-3 sm:grid-rows-1 gap-4 my-10 w-full md:w-3/4 lg:w-11/12 xl:w-10/12 2xl:w-9/12">
                 {features.map((feature, idx) => (
                     <BlurFade key={idx} delay={feature.delay} inView className="h-[400px] w-full gap-6">
                         <BentoCard {...feature} />
