@@ -12,7 +12,7 @@ const features = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1 flex items-center",
         background: (
-            <Image src="notes.svg" alt="notes" width={400} height={400} className="p-4" />
+            <Image src="notes-upload.svg" alt="notes" width={400} height={400} className="px-4 py-6" />
         ),
         delay: 0.9,
     },
@@ -24,7 +24,7 @@ const features = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
-            <Image src="flashcards.svg" alt="notes" width={500} height={400} className="p-4"/>
+            <Image src="notes.svg" alt="notes" width={500} height={400} className="p-4"/>
         ),
         delay: 1.1,
     },
