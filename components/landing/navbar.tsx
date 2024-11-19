@@ -1,11 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { BookOpen, Brain } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import MainButton from "../main-button";
+import { motion } from "framer-motion";
 
 export function Navbar() {
   return (
@@ -22,7 +22,9 @@ export function Navbar() {
             <span className="text-primary font-bold text-2xl">Flow</span>
           </Link>
           <div className="hidden md:flex gap-6">
-            <Link href="#features" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              href="#features" 
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors" >
               <BookOpen className="h-4 w-4" />
               Features
             </Link>
