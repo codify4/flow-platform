@@ -16,12 +16,12 @@ export default function Home() {
       <section id="features" className="py-24 mt-64 lg:mt-36 flex items-center justify-center">
         <Features />
       </section>
-      <section id="how-it-works" className="py-24">
+      {/* <section id="how-it-works" className="py-24">
         <HowItWorks />
       </section>
       <section className="py-24">
         <Testimonials />
-      </section>
+      </section> */}
       <section className="pb-24">
         <Cta />
       </section>
