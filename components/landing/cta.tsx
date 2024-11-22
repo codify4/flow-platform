@@ -14,7 +14,7 @@ const Cta = () => {
                 </div>
             </div>
             <MainButton 
-                className="px-16 py-6 text-lg text-white font-semiboldbg-primary hover:bg-secondary rounded-full"
+                className="px-[70px] py-6 text-lg text-white font-semiboldbg-primary hover:bg-secondary rounded-full"
                 bgClick="#3D08BF"
                 bgHover="#018650"
             >

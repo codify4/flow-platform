@@ -18,11 +18,11 @@ export default function Home() {
       </section>
       {/* <section id="how-it-works" className="py-24">
         <HowItWorks />
-      </section>
+      </section> */}
       <section className="py-24">
         <Testimonials />
-      </section> */}
-      <section className="pb-24">
+      </section>
+      <section className="py-24">
         <Cta />
       </section>
       <Footer />
