@@ -1,31 +1,11 @@
 export const testimonials = [
-    // {
-    //     name: "Jane Doe",
-    //     role: "High School Student",
-    //     text: "Flow transformed my chaotic lecture notes into perfectly organized summaries. It's like having a personal tutor!"
-    // },
-    // {   
-    //     name: "John Smith",
-    //     role: "College Freshman",
-    //     text: "The chat with PDFs feature saved me hours of frustration. Flow makes studying so much easier!"
-    // },  
-    // {   
-    //     name: "Emma Johnson",
-    //     role: "AP Student",
-    //     text: "The flashcards are a lifesaver! I feel so much more confident going into exams now."
-    // },  
-    // {   
-    //     name: "Liam Brown",
-    //     role: "University Sophomore",
-    //     text: "Flow helps me stay on top of my studies. The AI is intuitive and makes learning faster than ever!"
-    // },  
     {   
-        name: "Olivia Wilson",
+        name: "Riad Kruja",
         role: "Graduate Student",
         text: "I love how quickly I can turn lecture notes into study materials. Flow is a must-have for students."
     },  
     {   
-        name: "Mason Davis",
+        name: "Ijon Kushta",
         role: "High School Senior",
         text: "This platform helped me boost my grades by organizing my notes and providing clear, concise flashcards."
     },  
