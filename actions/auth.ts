@@ -17,14 +17,14 @@ export async function OAuthSignIn() {
     redirect('/dashboard');
 }
 
-export async function LogOut() {
-    const supabase = await createClient();
-    let { error } = await supabase.auth.signOut();
+// export async function LogOut() {
+//     const supabase = await createClient();
+//     let { error } = await supabase.auth.signOut();
 
-    if(error){
-        return redirect('/dashboard?message=Could not log out');
-    }
+//     if(error){
+//         return redirect('/dashboard?message=Could not log out');
+//     }
     
-    redirect('/login');
-}
+//     redirect('/login');
+// }
 
