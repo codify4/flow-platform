@@ -34,14 +34,15 @@ export function Navbar() {
             </Link>
           </div>
           <div className="flex items-center gap-4">
-            {/* <ModeToggle /> */}
-            <MainButton 
-              className="text-white font-semibold bg-primary"
-              bgClick="#3D08BF"
-              bgHover="#018650"
-            >
-                Dashboard
-            </MainButton>
+            <Link href="/login">
+              <MainButton 
+                className="text-white font-semibold bg-primary"
+                bgClick="#3D08BF"
+                bgHover="#018650"
+              >
+                  Dashboard
+              </MainButton>
+            </Link>
           </div>
         </div>
       </div>

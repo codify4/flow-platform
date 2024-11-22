@@ -1,3 +1,4 @@
+import Link from "next/link"
 import MainButton from "../main-button"
 
 const Cta = () => {
@@ -13,13 +14,15 @@ const Cta = () => {
                     <span className="text-primary ml-4">Flow</span>
                 </div>
             </div>
-            <MainButton 
-                className="px-[70px] py-6 text-lg text-white font-semiboldbg-primary hover:bg-secondary rounded-full"
-                bgClick="#3D08BF"
-                bgHover="#018650"
-            >
-                Start Learning
-            </MainButton>
+            <Link href="/login">
+                <MainButton 
+                    className="px-[70px] py-6 text-lg text-white font-semiboldbg-primary hover:bg-secondary rounded-full"
+                    bgClick="#3D08BF"
+                    bgHover="#018650"
+                >
+                    Start Learning
+                </MainButton>
+            </Link>
         </div>
     )
 }

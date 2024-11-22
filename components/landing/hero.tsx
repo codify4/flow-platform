@@ -4,6 +4,7 @@ import Image from "next/image"
 import MainButton from "../main-button"
 import { ChevronRight } from "lucide-react"
 import BlurFade from "../ui/blur-fade"
+import Link from "next/link"
 
 const Hero = () => {
   return (
@@ -26,14 +27,16 @@ const Hero = () => {
             </BlurFade>
             <BlurFade delay={0.5} className="z-10">
               <div className="flex gap-4 justify-center">
+              <Link href="/login" className="w-full"> 
                 <MainButton 
-                  className="px-12 py-4 text-white font-semiboldbg-primary"
+                  className="px-16 py-4 text-white font-semiboldbg-primary"
                   bgClick="#3D08BF"
                   bgHover="#018650"
                 >
                   Get Started
                   <ChevronRight className="w-5 h-5 font-bold ml-1" />
                 </MainButton>
+              </Link>
               </div>
             </BlurFade>
           </div>

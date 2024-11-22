@@ -1,6 +1,10 @@
-const page = () => {
+import { Card } from "@/components/ui/card"
+
+const LogInPage = () => {
   return (
-    <div>page</div>
+    <Card>
+        Login
+    </Card>
   )
 }
-export default page
+export default LogInPage
