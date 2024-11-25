@@ -1,11 +1,9 @@
 "use client";
 
-import { ModeToggle } from "@/components/mode-toggle";
 import { BookOpen, Brain } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import MainButton from "../main-button";
-import { motion } from "framer-motion";
 
 export function Navbar() {
   return (
@@ -28,9 +26,9 @@ export function Navbar() {
               <BookOpen className="h-4 w-4" />
               Features
             </Link>
-            <Link href="#how-it-works" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <Link href="#testimonials" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Brain className="h-4 w-4" />
-              How it Works
+              Testimonials
             </Link>
           </div>
           <div className="flex items-center gap-4">

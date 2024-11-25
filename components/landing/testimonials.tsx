@@ -41,7 +41,7 @@ const ReviewCard = ({
 
 export default function Testimonials() {
     return (
-        <div>
+        <div id="testimonials">
             <BlurFade delay={0.3} inView> 
                 <div className="text-4xl font-bold text-center mb-12">What our students say</div>
             </BlurFade>
