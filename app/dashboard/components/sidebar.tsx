@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import {
@@ -42,7 +43,7 @@ const data = {
   user: {
     name: "John Doe",
     email: "john@example.com",
-    avatar: "/avatars/john-doe.jpg",
+    avatar: "/flow-logo.png",
   },
 }
 
@@ -215,7 +216,7 @@ export function SidebarWrapper() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <SidebarProvider>
           <Sidebar collapsible="icon">
             <SidebarContent />
@@ -224,15 +225,15 @@ export function SidebarWrapper() {
       </div>
 
       {/* Mobile Sidebar */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="fixed top-4 left-4 z-40">
               <Menu className="h-4 w-4" />
-              <span className="sr-only">Toggle Sidebar</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="p-0 w-64">
+            <SheetTitle>Flow</SheetTitle>
             <SidebarProvider>
               <Sidebar>
                 <SidebarContent />
