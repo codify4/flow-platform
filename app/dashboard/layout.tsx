@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import { SidebarWrapper } from './components/sidebar';
 
 const poppins = Poppins({ 
   weight: ['500'],
@@ -21,6 +22,7 @@ export default function DashboardLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={`${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
+        <SidebarWrapper />
         {children}
       </body>
     </html>
